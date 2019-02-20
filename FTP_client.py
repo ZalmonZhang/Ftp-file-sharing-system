@@ -27,7 +27,7 @@ class start(PyQt5.QtWidgets.QWidget):
 
         try:
             self.addrs = open('history/address.txt', 'x')
-            self.addrs.write('["127.0.0.1"]')
+            self.addrs.write('["0.0.0.0"]')
             self.addrs.close()
         except Exception as e:
             pass
